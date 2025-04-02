@@ -1,85 +1,120 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="600" height="300" viewBox="0 0 600 300">
+<!-- Improved dashboard preview with clearer UI elements -->
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
   <defs>
     <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0f1624" />
-      <stop offset="100%" stop-color="#1a2332" />
+      <stop offset="0%" stop-color="#1a2332" />
+      <stop offset="100%" stop-color="#0f1624" />
     </linearGradient>
-    <linearGradient id="primary-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+    <linearGradient id="slider-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#4361ee" />
       <stop offset="100%" stop-color="#4cc9f0" />
     </linearGradient>
-    <linearGradient id="secondary-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#7209b7" />
-      <stop offset="100%" stop-color="#00f5d4" />
-    </linearGradient>
   </defs>
   
-  <!-- Background -->
-  <rect width="600" height="300" fill="url(#bg-gradient)" />
+  <!-- Main background (dashboard) -->
+  <rect width="600" height="400" fill="url(#bg-gradient)" rx="10" ry="10" />
   
-  <!-- Dashboard UI Elements -->
-  <g transform="translate(50, 50)">
-    <!-- Dashboard frame -->
-    <rect x="0" y="0" width="500" height="200" rx="10" ry="10" fill="#1a2332" stroke="#4cc9f0" stroke-width="2" />
+  <!-- Dashboard header -->
+  <rect x="0" y="0" width="600" height="50" fill="#0f1624" rx="10" ry="10" />
+  <text x="20" y="30" font-family="Arial, sans-serif" font-size="18" fill="#ffffff" font-weight="bold">CharaVector Dashboard</text>
+  
+  <!-- Navigation tabs -->
+  <rect x="300" y="0" width="100" height="50" fill="#4361ee" rx="0" ry="0" />
+  <text x="350" y="30" font-family="Arial, sans-serif" font-size="14" fill="#ffffff" text-anchor="middle">Character</text>
+  
+  <rect x="400" y="0" width="100" height="50" fill="#1a2332" rx="0" ry="0" />
+  <text x="450" y="30" font-family="Arial, sans-serif" font-size="14" fill="#b8c1ec" text-anchor="middle">Templates</text>
+  
+  <rect x="500" y="0" width="100" height="50" fill="#1a2332" rx="0" ry="0" />
+  <text x="550" y="30" font-family="Arial, sans-serif" font-size="14" fill="#b8c1ec" text-anchor="middle">Analytics</text>
+  
+  <!-- Left sidebar - Character traits -->
+  <rect x="0" y="50" width="200" height="350" fill="#1a2332" rx="0" ry="0" />
+  <text x="20" y="80" font-family="Arial, sans-serif" font-size="16" fill="#ffffff" font-weight="bold">Character Traits</text>
+  
+  <!-- Character trait sliders -->
+  <g transform="translate(20, 100)">
+    <!-- Patience slider -->
+    <text x="0" y="15" font-family="Arial, sans-serif" font-size="14" fill="#b8c1ec">Patience</text>
+    <rect x="0" y="25" width="160" height="10" rx="5" ry="5" fill="#2a3a51" />
+    <rect x="0" y="25" width="128" height="10" rx="5" ry="5" fill="url(#slider-gradient)" />
+    <circle cx="128" cy="30" r="8" fill="#00f5d4" stroke="#ffffff" stroke-width="2" />
+    <text x="170" y="30" font-family="Arial, sans-serif" font-size="12" fill="#ffffff">0.8</text>
     
-    <!-- Header bar -->
-    <rect x="0" y="0" width="500" height="40" rx="10" ry="10" fill="#2a3a51" />
-    <text x="20" y="25" fill="white" font-family="Arial" font-size="16">CharaVector Dashboard</text>
+    <!-- Curiosity slider -->
+    <text x="0" y="65" font-family="Arial, sans-serif" font-size="14" fill="#b8c1ec">Curiosity</text>
+    <rect x="0" y="75" width="160" height="10" rx="5" ry="5" fill="#2a3a51" />
+    <rect x="0" y="75" width="144" height="10" rx="5" ry="5" fill="url(#slider-gradient)" />
+    <circle cx="144" cy="80" r="8" fill="#00f5d4" stroke="#ffffff" stroke-width="2" />
+    <text x="170" y="80" font-family="Arial, sans-serif" font-size="12" fill="#ffffff">0.9</text>
     
-    <!-- Sidebar -->
-    <rect x="0" y="40" width="120" height="160" fill="#2a3a51" />
+    <!-- Assertiveness slider -->
+    <text x="0" y="115" font-family="Arial, sans-serif" font-size="14" fill="#b8c1ec">Assertiveness</text>
+    <rect x="0" y="125" width="160" height="10" rx="5" ry="5" fill="#2a3a51" />
+    <rect x="0" y="125" width="64" height="10" rx="5" ry="5" fill="url(#slider-gradient)" />
+    <circle cx="64" cy="130" r="8" fill="#00f5d4" stroke="#ffffff" stroke-width="2" />
+    <text x="170" y="130" font-family="Arial, sans-serif" font-size="12" fill="#ffffff">0.4</text>
     
-    <!-- Sidebar menu items -->
-    <rect x="10" y="60" width="100" height="25" rx="5" ry="5" fill="url(#primary-gradient)" opacity="0.8" />
-    <text x="20" y="77" fill="white" font-family="Arial" font-size="12">Character Traits</text>
+    <!-- Empathy slider -->
+    <text x="0" y="165" font-family="Arial, sans-serif" font-size="14" fill="#b8c1ec">Empathy</text>
+    <rect x="0" y="175" width="160" height="10" rx="5" ry="5" fill="#2a3a51" />
+    <rect x="0" y="175" width="112" height="10" rx="5" ry="5" fill="url(#slider-gradient)" />
+    <circle cx="112" cy="180" r="8" fill="#00f5d4" stroke="#ffffff" stroke-width="2" />
+    <text x="170" y="180" font-family="Arial, sans-serif" font-size="12" fill="#ffffff">0.7</text>
     
-    <rect x="10" y="95" width="100" height="25" rx="5" ry="5" fill="#1a2332" stroke="#4cc9f0" stroke-width="1" />
-    <text x="20" y="112" fill="white" font-family="Arial" font-size="12">Test Responses</text>
-    
-    <rect x="10" y="130" width="100" height="25" rx="5" ry="5" fill="#1a2332" stroke="#4cc9f0" stroke-width="1" />
-    <text x="20" y="147" fill="white" font-family="Arial" font-size="12">API Settings</text>
-    
-    <rect x="10" y="165" width="100" height="25" rx="5" ry="5" fill="#1a2332" stroke="#4cc9f0" stroke-width="1" />
-    <text x="20" y="182" fill="white" font-family="Arial" font-size="12">Analytics</text>
-    
-    <!-- Main content area -->
-    <g transform="translate(140, 50)">
-      <text x="0" y="0" fill="white" font-family="Arial" font-size="14" font-weight="bold">Character Vector Adjustments</text>
-      
-      <!-- Sliders -->
-      <g transform="translate(0, 20)">
-        <text x="0" y="10" fill="white" font-family="Arial" font-size="12">Patience</text>
-        <rect x="100" y="5" width="200" height="10" rx="5" ry="5" fill="#0f1624" stroke="#4cc9f0" stroke-width="1" />
-        <circle cx="220" cy="10" r="8" fill="url(#primary-gradient)" />
-        <text x="310" y="10" fill="white" font-family="Arial" font-size="12">0.8</text>
-      </g>
-      
-      <g transform="translate(0, 50)">
-        <text x="0" y="10" fill="white" font-family="Arial" font-size="12">Curiosity</text>
-        <rect x="100" y="5" width="200" height="10" rx="5" ry="5" fill="#0f1624" stroke="#4cc9f0" stroke-width="1" />
-        <circle cx="250" cy="10" r="8" fill="url(#primary-gradient)" />
-        <text x="310" y="10" fill="white" font-family="Arial" font-size="12">0.9</text>
-      </g>
-      
-      <g transform="translate(0, 80)">
-        <text x="0" y="10" fill="white" font-family="Arial" font-size="12">Assertiveness</text>
-        <rect x="100" y="5" width="200" height="10" rx="5" ry="5" fill="#0f1624" stroke="#4cc9f0" stroke-width="1" />
-        <circle cx="170" cy="10" r="8" fill="url(#primary-gradient)" />
-        <text x="310" y="10" fill="white" font-family="Arial" font-size="12">0.4</text>
-      </g>
-      
-      <g transform="translate(0, 110)">
-        <text x="0" y="10" fill="white" font-family="Arial" font-size="12">Empathy</text>
-        <rect x="100" y="5" width="200" height="10" rx="5" ry="5" fill="#0f1624" stroke="#4cc9f0" stroke-width="1" />
-        <circle cx="230" cy="10" r="8" fill="url(#primary-gradient)" />
-        <text x="310" y="10" fill="white" font-family="Arial" font-size="12">0.85</text>
-      </g>
-    </g>
+    <!-- Creativity slider -->
+    <text x="0" y="215" font-family="Arial, sans-serif" font-size="14" fill="#b8c1ec">Creativity</text>
+    <rect x="0" y="225" width="160" height="10" rx="5" ry="5" fill="#2a3a51" />
+    <rect x="0" y="225" width="96" height="10" rx="5" ry="5" fill="url(#slider-gradient)" />
+    <circle cx="96" cy="230" r="8" fill="#00f5d4" stroke="#ffffff" stroke-width="2" />
+    <text x="170" y="230" font-family="Arial, sans-serif" font-size="12" fill="#ffffff">0.6</text>
   </g>
   
-  <!-- Decorative elements -->
-  <circle cx="30" cy="30" r="15" fill="url(#secondary-gradient)" opacity="0.5" />
-  <circle cx="570" cy="30" r="15" fill="url(#secondary-gradient)" opacity="0.5" />
-  <circle cx="30" cy="270" r="15" fill="url(#secondary-gradient)" opacity="0.5" />
-  <circle cx="570" cy="270" r="15" fill="url(#secondary-gradient)" opacity="0.5" />
+  <!-- Main content area - Character visualization -->
+  <rect x="200" y="50" width="400" height="200" fill="#0f1624" rx="0" ry="0" />
+  
+  <!-- Character radar chart -->
+  <g transform="translate(400, 150)">
+    <!-- Radar background -->
+    <polygon points="0,-80 69.3,-40 69.3,40 0,80 -69.3,40 -69.3,-40" fill="#1a2332" stroke="#4cc9f0" stroke-width="1" stroke-opacity="0.3" />
+    <polygon points="0,-60 52,-30 52,30 0,60 -52,30 -52,-30" fill="#1a2332" stroke="#4cc9f0" stroke-width="1" stroke-opacity="0.3" />
+    <polygon points="0,-40 34.6,-20 34.6,20 0,40 -34.6,20 -34.6,-20" fill="#1a2332" stroke="#4cc9f0" stroke-width="1" stroke-opacity="0.3" />
+    <polygon points="0,-20 17.3,-10 17.3,10 0,20 -17.3,10 -17.3,-10" fill="#1a2332" stroke="#4cc9f0" stroke-width="1" stroke-opacity="0.3" />
+    
+    <!-- Axis lines -->
+    <line x1="0" y1="0" x2="0" y2="-80" stroke="#4cc9f0" stroke-width="1" stroke-opacity="0.5" />
+    <line x1="0" y1="0" x2="69.3" y2="-40" stroke="#4cc9f0" stroke-width="1" stroke-opacity="0.5" />
+    <line x1="0" y1="0" x2="69.3" y2="40" stroke="#4cc9f0" stroke-width="1" stroke-opacity="0.5" />
+    <line x1="0" y1="0" x2="0" y2="80" stroke="#4cc9f0" stroke-width="1" stroke-opacity="0.5" />
+    <line x1="0" y1="0" x2="-69.3" y2="40" stroke="#4cc9f0" stroke-width="1" stroke-opacity="0.5" />
+    <line x1="0" y1="0" x2="-69.3" y2="-40" stroke="#4cc9f0" stroke-width="1" stroke-opacity="0.5" />
+    
+    <!-- Character profile -->
+    <polygon points="0,-64 62.4,-36 27.7,16 0,56 -55.4,32 -41.6,-24" fill="#4361ee" fill-opacity="0.3" stroke="#00f5d4" stroke-width="2" />
+    
+    <!-- Axis labels -->
+    <text x="0" y="-90" font-family="Arial, sans-serif" font-size="12" fill="#ffffff" text-anchor="middle">Patience</text>
+    <text x="85" y="-40" font-family="Arial, sans-serif" font-size="12" fill="#ffffff" text-anchor="start">Curiosity</text>
+    <text x="85" y="40" font-family="Arial, sans-serif" font-size="12" fill="#ffffff" text-anchor="start">Assertiveness</text>
+    <text x="0" y="95" font-family="Arial, sans-serif" font-size="12" fill="#ffffff" text-anchor="middle">Empathy</text>
+    <text x="-85" y="40" font-family="Arial, sans-serif" font-size="12" fill="#ffffff" text-anchor="end">Creativity</text>
+    <text x="-85" y="-40" font-family="Arial, sans-serif" font-size="12" fill="#ffffff" text-anchor="end">Helpfulness</text>
+  </g>
+  
+  <!-- Response preview section -->
+  <rect x="200" y="250" width="400" height="150" fill="#1a2332" rx="0" ry="0" />
+  <text x="220" y="280" font-family="Arial, sans-serif" font-size="16" fill="#ffffff" font-weight="bold">Response Preview</text>
+  
+  <!-- Sample conversation -->
+  <rect x="220" y="295" width="360" height="90" fill="#0f1624" rx="5" ry="5" />
+  
+  <text x="230" y="315" font-family="Arial, sans-serif" font-size="12" fill="#8892b0">User:</text>
+  <text x="270" y="315" font-family="Arial, sans-serif" font-size="12" fill="#b8c1ec">Can you help me understand how machine learning works?</text>
+  
+  <text x="230" y="340" font-family="Arial, sans-serif" font-size="12" fill="#4cc9f0">AI:</text>
+  <text x="270" y="340" font-family="Arial, sans-serif" font-size="12" fill="#ffffff">I'd be happy to explain machine learning! It's a fascinating field.</text>
+  <text x="270" y="360" font-family="Arial, sans-serif" font-size="12" fill="#ffffff">Machine learning is about teaching computers to learn patterns</text>
+  <text x="270" y="375" font-family="Arial, sans-serif" font-size="12" fill="#ffffff">from data rather than being explicitly programmed. Would you</text>
+  <text x="270" y="390" font-family="Arial, sans-serif" font-size="12" fill="#ffffff">like me to start with the basic concepts or specific applications?</text>
 </svg>

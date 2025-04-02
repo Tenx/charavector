@@ -1,76 +1,156 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="600" height="300" viewBox="0 0 600 300">
+<!-- Improved How It Works illustration with clearer process steps -->
+<svg width="800" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
   <defs>
     <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0f1624" />
-      <stop offset="100%" stop-color="#1a2332" />
+      <stop offset="0%" stop-color="#1a2332" />
+      <stop offset="100%" stop-color="#0f1624" />
     </linearGradient>
-    <linearGradient id="step-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#4361ee" />
-      <stop offset="100%" stop-color="#4cc9f0" />
-    </linearGradient>
-    <linearGradient id="accent-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#7209b7" />
-      <stop offset="100%" stop-color="#00f5d4" />
+    <linearGradient id="step-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4361ee" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#7209b7" stop-opacity="0.2" />
     </linearGradient>
   </defs>
   
-  <!-- Background -->
-  <rect width="600" height="300" fill="url(#bg-gradient)" />
+  <!-- Main background -->
+  <rect width="800" height="400" fill="url(#bg-gradient)" rx="10" ry="10" />
   
-  <!-- Step 1 -->
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial, sans-serif" font-size="24" fill="#ffffff" text-anchor="middle" font-weight="bold">How CharaVector Works</text>
+  
+  <!-- Step 1: Describe AI's Character -->
   <g transform="translate(100, 150)">
-    <circle cx="0" cy="0" r="40" fill="#0f1624" stroke="url(#step-gradient)" stroke-width="3" />
-    <text x="0" y="5" fill="white" font-family="Arial" font-size="24" text-anchor="middle" font-weight="bold">1</text>
-    <text x="0" y="70" fill="white" font-family="Arial" font-size="14" text-anchor="middle">Describe AI's</text>
-    <text x="0" y="90" fill="white" font-family="Arial" font-size="14" text-anchor="middle">Character</text>
+    <!-- Step background -->
+    <rect x="-60" y="-60" width="120" height="120" rx="10" ry="10" fill="url(#step-gradient)" stroke="#4361ee" stroke-width="2" />
     
-    <!-- Icon -->
-    <g transform="translate(0, -15) scale(0.03)">
-      <path d="M290.74 93.24l128.02 128.02-277.99 277.99-114.14 12.6C11.35 513.54-1.56 500.62.14 485.34l12.7-114.22 277.9-277.88zm207.2-19.06l-60.11-60.11c-18.75-18.75-49.16-18.75-67.91 0l-56.55 56.55 128.02 128.02 56.55-56.55c18.75-18.76 18.75-49.16 0-67.91z" fill="white"/>
+    <!-- Step number -->
+    <circle cx="0" cy="-70" r="20" fill="#4361ee" />
+    <text x="0" y="-65" font-family="Arial, sans-serif" font-size="18" fill="#ffffff" text-anchor="middle" font-weight="bold">1</text>
+    
+    <!-- Step icon -->
+    <circle cx="0" cy="0" r="30" fill="#1a2332" stroke="#4cc9f0" stroke-width="1" />
+    <text x="0" y="8" font-family="Arial, sans-serif" font-size="24" fill="#00f5d4" text-anchor="middle">✏️</text>
+    
+    <!-- Step title -->
+    <text x="0" y="70" font-family="Arial, sans-serif" font-size="16" fill="#ffffff" text-anchor="middle" font-weight="bold">Describe Character</text>
+    
+    <!-- Character traits visualization -->
+    <g transform="translate(0, 0)" opacity="0.8">
+      <line x1="0" y1="-20" x2="0" y2="20" stroke="#4cc9f0" stroke-width="1" stroke-opacity="0.5" />
+      <line x1="-20" y1="0" x2="20" y2="0" stroke="#4cc9f0" stroke-width="1" stroke-opacity="0.5" />
+      <circle cx="10" cy="-15" r="3" fill="#00f5d4" />
+      <circle cx="-15" cy="10" r="3" fill="#00f5d4" />
+      <circle cx="15" cy="15" r="3" fill="#00f5d4" />
     </g>
   </g>
   
-  <!-- Step 2 -->
-  <g transform="translate(233, 150)">
-    <circle cx="0" cy="0" r="40" fill="#0f1624" stroke="url(#step-gradient)" stroke-width="3" />
-    <text x="0" y="5" fill="white" font-family="Arial" font-size="24" text-anchor="middle" font-weight="bold">2</text>
-    <text x="0" y="70" fill="white" font-family="Arial" font-size="14" text-anchor="middle">Adjust</text>
-    <text x="0" y="90" fill="white" font-family="Arial" font-size="14" text-anchor="middle">Reactions</text>
+  <!-- Step 2: Adjust Reactions -->
+  <g transform="translate(300, 150)">
+    <!-- Step background -->
+    <rect x="-60" y="-60" width="120" height="120" rx="10" ry="10" fill="url(#step-gradient)" stroke="#4361ee" stroke-width="2" />
     
-    <!-- Icon -->
-    <g transform="translate(0, -15) scale(0.03)">
-      <path d="M496 384H160v-16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v16H16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h80v16c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16v-16h336c8.8 0 16-7.2 16-16v-32c0-8.8-7.2-16-16-16zm0-160H288v-16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v16H16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h208v16c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16v-16h208c8.8 0 16-7.2 16-16v-32c0-8.8-7.2-16-16-16zm0-160H416v-16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v16H16C7.2 64 0 71.2 0 80v32c0 8.8 7.2 16 16 16h336v16c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16v-16h80c8.8 0 16-7.2 16-16V80c0-8.8-7.2-16-16-16z" fill="white"/>
+    <!-- Step number -->
+    <circle cx="0" cy="-70" r="20" fill="#4361ee" />
+    <text x="0" y="-65" font-family="Arial, sans-serif" font-size="18" fill="#ffffff" text-anchor="middle" font-weight="bold">2</text>
+    
+    <!-- Step icon -->
+    <circle cx="0" cy="0" r="30" fill="#1a2332" stroke="#4cc9f0" stroke-width="1" />
+    <text x="0" y="8" font-family="Arial, sans-serif" font-size="24" fill="#00f5d4" text-anchor="middle">🎚️</text>
+    
+    <!-- Step title -->
+    <text x="0" y="70" font-family="Arial, sans-serif" font-size="16" fill="#ffffff" text-anchor="middle" font-weight="bold">Adjust Reactions</text>
+    
+    <!-- Sliders visualization -->
+    <g transform="translate(0, 0)" opacity="0.8">
+      <rect x="-20" y="-15" width="40" height="5" rx="2" ry="2" fill="#2a3a51" />
+      <rect x="-20" y="-15" width="25" height="5" rx="2" ry="2" fill="#4cc9f0" />
+      <circle cx="5" cy="-12.5" r="4" fill="#00f5d4" />
+      
+      <rect x="-20" y="0" width="40" height="5" rx="2" ry="2" fill="#2a3a51" />
+      <rect x="-20" y="0" width="15" height="5" rx="2" ry="2" fill="#4cc9f0" />
+      <circle cx="-5" cy="2.5" r="4" fill="#00f5d4" />
+      
+      <rect x="-20" y="15" width="40" height="5" rx="2" ry="2" fill="#2a3a51" />
+      <rect x="-20" y="15" width="30" height="5" rx="2" ry="2" fill="#4cc9f0" />
+      <circle cx="10" cy="17.5" r="4" fill="#00f5d4" />
     </g>
   </g>
   
-  <!-- Step 3 -->
-  <g transform="translate(366, 150)">
-    <circle cx="0" cy="0" r="40" fill="#0f1624" stroke="url(#step-gradient)" stroke-width="3" />
-    <text x="0" y="5" fill="white" font-family="Arial" font-size="24" text-anchor="middle" font-weight="bold">3</text>
-    <text x="0" y="70" fill="white" font-family="Arial" font-size="14" text-anchor="middle">Test &</text>
-    <text x="0" y="90" fill="white" font-family="Arial" font-size="14" text-anchor="middle">Improve</text>
+  <!-- Step 3: Test & Improve -->
+  <g transform="translate(500, 150)">
+    <!-- Step background -->
+    <rect x="-60" y="-60" width="120" height="120" rx="10" ry="10" fill="url(#step-gradient)" stroke="#4361ee" stroke-width="2" />
     
-    <!-- Icon -->
-    <g transform="translate(0, -15) scale(0.03)">
-      <path d="M507.42 19.32l-7.19 1.36c-27.87 5.27-56.74 15.68-87.12 30.19v-.01C345.49 80.19 223.93 167.34 112.07 256.7c-50.04 40.05-92.14 83.45-127.77 131.38-11.07 14.9-17.07 33.85-17.07 53.24 0 48.86 39.4 88.26 88.26 88.26 29.92 0 57.77-15 74.38-40.06l7.85-11.72c32.9-49.19 76.21-105.99 153.95-148.98 45.24-25.12 95.85-37.9 146.98-37.9 35.42 0 69.48 6.32 99.68 18.34 22.62 9.02 43.03 22.16 60.27 38.65 27.99 26.73 44.41 60.34 49.05 94.67 4.35 32.24-1.59 64.12-17.14 92.07-2.83 5.09-8.11 8.03-13.73 8.03-8.84 0-15.99-7.17-15.99-16.01 0-2.09.41-4.09 1.15-5.91 12.93-23.35 18.01-49.68 14.32-76.59-3.58-26.47-16.57-51.74-38.73-72.8-13.77-13.16-30.02-23.55-48.18-30.92-24.81-9.9-53.01-15.15-82.49-15.15-44.02 0-88.09 11.08-127.75 32.94-69.32 38.51-107.86 90.61-138.29 136.91l-7.85 11.73c-8.99 13.4-24.09 21.42-40.49 21.42-26.87 0-48.69-21.82-48.69-48.69 0-10.59 3.29-20.91 9.31-29.54 32.47-43.78 73.11-86.7 120.68-124.62 111.09-88.75 232.95-176.18 300.92-205.76 27.45-11.94 52.98-20.85 77.06-26.07l7.52-1.42c8.65-1.64 16.97 4.06 18.61 12.74 1.64 8.69-4.07 16.98-12.76 18.62z" fill="white"/>
+    <!-- Step number -->
+    <circle cx="0" cy="-70" r="20" fill="#4361ee" />
+    <text x="0" y="-65" font-family="Arial, sans-serif" font-size="18" fill="#ffffff" text-anchor="middle" font-weight="bold">3</text>
+    
+    <!-- Step icon -->
+    <circle cx="0" cy="0" r="30" fill="#1a2332" stroke="#4cc9f0" stroke-width="1" />
+    <text x="0" y="8" font-family="Arial, sans-serif" font-size="24" fill="#00f5d4" text-anchor="middle">🧪</text>
+    
+    <!-- Step title -->
+    <text x="0" y="70" font-family="Arial, sans-serif" font-size="16" fill="#ffffff" text-anchor="middle" font-weight="bold">Test & Improve</text>
+    
+    <!-- Testing visualization -->
+    <g transform="translate(0, 0)" opacity="0.8">
+      <rect x="-20" y="-15" width="40" height="30" rx="5" ry="5" fill="#1a2332" stroke="#4cc9f0" stroke-width="1" />
+      <line x1="-15" y1="-5" x2="15" y2="-5" stroke="#4cc9f0" stroke-width="1" />
+      <line x1="-15" y1="5" x2="5" y2="5" stroke="#ffffff" stroke-width="1" />
+      <circle cx="15" cy="5" r="3" fill="#00f5d4" />
     </g>
   </g>
   
-  <!-- Step 4 -->
-  <g transform="translate(499, 150)">
-    <circle cx="0" cy="0" r="40" fill="#0f1624" stroke="url(#step-gradient)" stroke-width="3" />
-    <text x="0" y="5" fill="white" font-family="Arial" font-size="24" text-anchor="middle" font-weight="bold">4</text>
-    <text x="0" y="70" fill="white" font-family="Arial" font-size="14" text-anchor="middle">Integrate</text>
-    <text x="0" y="90" fill="white" font-family="Arial" font-size="14" text-anchor="middle">Easily</text>
+  <!-- Step 4: Integrate Easily -->
+  <g transform="translate(700, 150)">
+    <!-- Step background -->
+    <rect x="-60" y="-60" width="120" height="120" rx="10" ry="10" fill="url(#step-gradient)" stroke="#4361ee" stroke-width="2" />
     
-    <!-- Icon -->
-    <g transform="translate(0, -15) scale(0.03)">
-      <path d="M384 112v352c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112c0-26.51 21.49-48 48-48h288c26.51 0 48 21.49 48 48zm-48 346V160H48v298c0 3.314 2.686 6 6 6h276c3.314 0 6-2.686 6-6zm96-298v212c0 6.627-5.373 12-12 12h-24c-6.627 0-12-5.373-12-12V160c0-6.627 5.373-12 12-12h24c6.627 0 12 5.373 12 12zm48 0v212c0 6.627-5.373 12-12 12h-24c-6.627 0-12-5.373-12-12V160c0-6.627 5.373-12 12-12h24c6.627 0 12 5.373 12 12zm32 0v212c0 6.627-5.373 12-12 12h-24c-6.627 0-12-5.373-12-12V160c0-6.627 5.373-12 12-12h24c6.627 0 12 5.373 12 12z" fill="white"/>
+    <!-- Step number -->
+    <circle cx="0" cy="-70" r="20" fill="#4361ee" />
+    <text x="0" y="-65" font-family="Arial, sans-serif" font-size="18" fill="#ffffff" text-anchor="middle" font-weight="bold">4</text>
+    
+    <!-- Step icon -->
+    <circle cx="0" cy="0" r="30" fill="#1a2332" stroke="#4cc9f0" stroke-width="1" />
+    <text x="0" y="8" font-family="Arial, sans-serif" font-size="24" fill="#00f5d4" text-anchor="middle">🔌</text>
+    
+    <!-- Step title -->
+    <text x="0" y="70" font-family="Arial, sans-serif" font-size="16" fill="#ffffff" text-anchor="middle" font-weight="bold">Integrate Easily</text>
+    
+    <!-- Code visualization -->
+    <g transform="translate(0, 0)" opacity="0.8">
+      <rect x="-20" y="-15" width="40" height="30" rx="5" ry="5" fill="#1a2332" stroke="#4cc9f0" stroke-width="1" />
+      <line x1="-15" y1="-5" x2="-5" y2="-5" stroke="#7209b7" stroke-width="1" />
+      <line x1="-15" y1="0" x2="15" y2="0" stroke="#4361ee" stroke-width="1" />
+      <line x1="-15" y1="5" x2="5" y2="5" stroke="#4cc9f0" stroke-width="1" />
+      <line x1="-15" y1="10" x2="10" y2="10" stroke="#00f5d4" stroke-width="1" />
     </g>
   </g>
   
-  <!-- Connection lines -->
-  <line x1="140" y1="150" x2="193" y2="150" stroke="url(#accent-gradient)" stroke-width="3" />
-  <line x1="273" y1="150" x2="326" y2="150" stroke="url(#accent-gradient)" stroke-width="3" />
-  <line x1="406" y1="150" x2="459" y2="150" stroke="url(#accent-gradient)" stroke-width="3" />
+  <!-- Connection arrows -->
+  <g stroke="#4cc9f0" stroke-width="2" fill="none" stroke-dasharray="5,5">
+    <path d="M160 150 C 180 150, 220 150, 240 150" />
+    <path d="M360 150 C 380 150, 420 150, 440 150" />
+    <path d="M560 150 C 580 150, 620 150, 640 150" />
+  </g>
+  
+  <!-- Result visualization -->
+  <g transform="translate(400, 300)">
+    <!-- Result background -->
+    <rect x="-300" y="-30" width="600" height="60" rx="10" ry="10" fill="#1a2332" stroke="#00f5d4" stroke-width="2" stroke-dasharray="5,5" />
+    
+    <!-- Result text -->
+    <text x="0" y="5" font-family="Arial, sans-serif" font-size="18" fill="#ffffff" text-anchor="middle">AI with Unique Character That Adapts to User Interactions</text>
+    
+    <!-- Result icons -->
+    <g transform="translate(-250, 0)">
+      <circle cx="0" cy="0" r="15" fill="#4361ee" fill-opacity="0.3" stroke="#4361ee" stroke-width="1" />
+      <text x="0" y="5" font-family="Arial, sans-serif" font-size="14" fill="#ffffff" text-anchor="middle">🤖</text>
+    </g>
+    
+    <g transform="translate(250, 0)">
+      <circle cx="0" cy="0" r="15" fill="#7209b7" fill-opacity="0.3" stroke="#7209b7" stroke-width="1" />
+      <text x="0" y="5" font-family="Arial, sans-serif" font-size="14" fill="#ffffff" text-anchor="middle">👤</text>
+    </g>
+  </g>
 </svg>

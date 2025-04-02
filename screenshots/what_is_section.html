@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CharaVector What Is Section Preview</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #0f1624;
+            color: #ffffff;
+        }
+        .preview-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .preview-title {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #4cc9f0;
+        }
+        .section-preview {
+            border: 2px solid #4361ee;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 40px;
+            box-shadow: 0 0 15px rgba(67, 97, 238, 0.5);
+            background-color: #1a2332;
+        }
+        .section-content {
+            padding: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 8px;
+        }
+        .section-title {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2rem;
+            position: relative;
+            display: inline-block;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 60px;
+            height: 4px;
+            background: linear-gradient(90deg, #4361ee, #4cc9f0);
+            border-radius: 50px;
+        }
+        .section-description {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 40px;
+            font-size: 1.1rem;
+            color: #b8c1ec;
+            line-height: 1.6;
+        }
+        .tech-explanation {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 30px;
+            margin: 40px 0;
+        }
+        .tech-text {
+            flex: 1;
+            min-width: 300px;
+        }
+        .tech-image {
+            flex: 1;
+            min-width: 300px;
+            display: flex;
+            justify-content: center;
+        }
+        h3 {
+            font-size: 1.5rem;
+            color: #4cc9f0;
+            margin-bottom: 15px;
+        }
+        p {
+            color: #b8c1ec;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+        .feature-points {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin: 40px 0;
+        }
+        .feature-point {
+            flex: 1;
+            min-width: 250px;
+            max-width: 350px;
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(42, 58, 81, 0.5);
+            border-radius: 8px;
+            border: 1px solid rgba(184, 193, 236, 0.1);
+        }
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            color: #4cc9f0;
+        }
+        .feature-point h3 {
+            margin-bottom: 10px;
+            font-size: 1.3rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="preview-container">
+        <h1 class="preview-title">CharaVector "What Is" Section Preview</h1>
+        
+        <div class="section-preview">
+            <div class="section-content">
+                <h2 class="section-title">What is CharaVector?</h2>
+                <p class="section-description">
+                    CharaVector is a powerful vector-based modeling service that helps developers shape AI behavior, 
+                    creating more natural and engaging interactions with users. Our technology transforms flat, generic AI responses 
+                    into rich, personality-driven interactions that feel more human and authentic.
+                </p>
+                
+                <div class="tech-explanation">
+                    <div class="tech-text">
+                        <h3>The Science Behind CharaVector</h3>
+                        <p>
+                            Our technology uses multi-dimensional vectors to represent personality traits and behavioral characteristics. 
+                            Each AI agent is defined by a unique combination of vector values across dimensions like patience, curiosity, 
+                            assertiveness, empathy, and dozens more. These vectors dynamically adjust based on context and interaction history.
+                        </p>
+                        <p>
+                            Unlike simple prompt engineering, CharaVector creates a persistent character model that evolves over time, 
+                            maintaining consistency while allowing for natural growth and adaptation.
+                        </p>
+                    </div>
+                    <div class="tech-image">
+                        <img src="../images/ai-agents-illustration.svg" alt="AI Agents Vector Illustration" style="max-width: 100%; height: auto;">
+                    </div>
+                </div>
+                
+                <div class="feature-points">
+                    <div class="feature-point">
+                        <div class="feature-icon">
+                            <span style="color: #4cc9f0; font-size: 36px;">⬦</span>
+                        </div>
+                        <h3>Vector-Based Modeling</h3>
+                        <p>Define how AI agents behave using precise vector dimensions that capture the nuances of personality and interaction style.</p>
+                    </div>
+                    <div class="feature-point">
+                        <div class="feature-icon">
+                            <span style="color: #4cc9f0; font-size: 36px;">💬</span>
+                        </div>
+                        <h3>Natural Interactions</h3>
+                        <p>Make AI responses feel more natural and engaging with consistent personality traits that create authentic conversational experiences.</p>
+                    </div>
+                    <div class="feature-point">
+                        <div class="feature-icon">
+                            <span style="color: #4cc9f0; font-size: 36px;">🤖</span>
+                        </div>
+                        <h3>Adaptive Behavior</h3>
+                        <p>Improve multi-agent interactions with adaptive behavior that evolves based on context, user feedback, and interaction history.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
