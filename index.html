@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="CharaVector - Vector-based AI character modeling service for developers to shape AI agent behavior and interactions">
-    <meta name="keywords" content="AI, character modeling, vector-based, AI agents, developer tools">
+    <meta name="keywords" content="AI, character modeling, vector-based, AI agents, developer tools, character vectors, AI behavior">
     <title>CharaVector - Don't Make Your AI Agents Cry</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
 </head>
 <body>
     <header>
@@ -42,19 +43,22 @@
             <div class="hero-content">
                 <h1>Don't Make Your AI Agents Cry</h1>
                 <h2>Give your AI a unique character with vector-based modeling.</h2>
+                <p class="hero-description">
+                    Transform generic AI responses into personalized interactions with our advanced vector-based character modeling technology. Create AI agents with distinct characters that adapt to user interactions.
+                </p>
                 <div class="hero-buttons">
                     <a href="#get-started" class="btn primary-btn">Get API Access</a>
                     <a href="#demo" class="btn secondary-btn">Watch Demo</a>
                 </div>
             </div>
             <div class="hero-video">
-                <video autoplay muted loop playsinline>
-                    <source src="videos/charavector-intro.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
+                <img src="images/hero-video-placeholder.svg" alt="CharaVector Demo Video" class="video-placeholder">
+                <div class="play-button">
+                    <i class="fas fa-play"></i>
+                </div>
             </div>
             <div class="animated-agents">
-                <!-- Animated AI agent visuals will be added with CSS -->
+                <!-- Animated AI agent visuals with CSS -->
             </div>
         </section>
 
@@ -64,30 +68,50 @@
                 <h2 class="section-title">What is CharaVector?</h2>
                 <p class="section-description">
                     CharaVector is a powerful vector-based modeling service that helps developers shape AI behavior, 
-                    creating more natural and engaging interactions with users.
+                    creating more natural and engaging interactions with users. Our technology transforms flat, generic AI responses 
+                    into rich, character-driven interactions that feel more human and authentic.
                 </p>
+                
+                <div class="tech-explanation">
+                    <div class="tech-text">
+                        <h3>The Science Behind CharaVector</h3>
+                        <p>
+                            Our technology uses multi-dimensional vectors to represent character traits and behavioral characteristics. 
+                            Each AI agent is defined by a unique combination of vector values across dimensions like patience, curiosity, 
+                            assertiveness, empathy, and dozens more. These vectors dynamically adjust based on context and interaction history.
+                        </p>
+                        <p>
+                            Unlike simple prompt engineering, CharaVector creates a persistent character model that evolves over time, 
+                            maintaining consistency while allowing for natural growth and adaptation.
+                        </p>
+                    </div>
+                    <div class="tech-image">
+                        <img src="images/ai-agents-illustration.svg" alt="AI Agents Vector Illustration" class="tech-illustration">
+                    </div>
+                </div>
+                
                 <div class="feature-points">
                     <div class="feature-point">
                         <div class="feature-icon">
                             <i class="fas fa-vector-square"></i>
                         </div>
-                        <p>Define how AI agents behave using vectors.</p>
+                        <h3>Vector-Based Modeling</h3>
+                        <p>Define how AI agents behave using precise vector dimensions that capture the nuances of character and interaction style.</p>
                     </div>
                     <div class="feature-point">
                         <div class="feature-icon">
                             <i class="fas fa-comments"></i>
                         </div>
-                        <p>Make AI responses feel more natural and engaging.</p>
+                        <h3>Natural Interactions</h3>
+                        <p>Make AI responses feel more natural and engaging with consistent character traits that create authentic conversational experiences.</p>
                     </div>
                     <div class="feature-point">
                         <div class="feature-icon">
                             <i class="fas fa-robot"></i>
                         </div>
-                        <p>Improve multi-agent interactions with adaptive behavior.</p>
+                        <h3>Adaptive Behavior</h3>
+                        <p>Improve multi-agent interactions with adaptive behavior that evolves based on context, user feedback, and interaction history.</p>
                     </div>
-                </div>
-                <div class="animated-illustration">
-                    <!-- Simple animated illustration showing AI agents adjusting reactions -->
                 </div>
             </div>
         </section>
@@ -96,6 +120,15 @@
         <section id="how-it-works" class="how-it-works-section">
             <div class="section-container">
                 <h2 class="section-title">How It Works</h2>
+                <p class="section-description">
+                    CharaVector makes it easy to create and deploy AI agents with distinct characters in just four simple steps. 
+                    Our intuitive platform handles the complex vector mathematics behind the scenes, letting you focus on crafting the perfect AI character.
+                </p>
+                
+                <div class="process-illustration">
+                    <img src="images/how-it-works.svg" alt="CharaVector Process" class="process-image">
+                </div>
+                
                 <div class="steps-container">
                     <div class="step">
                         <div class="step-number">1</div>
@@ -103,7 +136,7 @@
                             <i class="fas fa-pencil-alt"></i>
                         </div>
                         <h3>Describe AI's Character</h3>
-                        <p>Define traits like patience, curiosity, and assertiveness.</p>
+                        <p>Define traits like patience, curiosity, and assertiveness using our intuitive sliders or API parameters. Choose from preset templates or create a completely custom character profile.</p>
                     </div>
                     <div class="step">
                         <div class="step-number">2</div>
@@ -111,7 +144,7 @@
                             <i class="fas fa-sliders-h"></i>
                         </div>
                         <h3>Adjust Reactions</h3>
-                        <p>Fine-tune behavior to match interactions.</p>
+                        <p>Fine-tune behavior to match specific interaction scenarios. Set how your AI agent responds to different user emotions, questions, or situations with our reaction adjustment tools.</p>
                     </div>
                     <div class="step">
                         <div class="step-number">3</div>
@@ -119,7 +152,7 @@
                             <i class="fas fa-vial"></i>
                         </div>
                         <h3>Test & Improve</h3>
-                        <p>See real-time changes in AI responses.</p>
+                        <p>See real-time changes in AI responses as you adjust character vectors. Our interactive testing environment lets you simulate conversations and refine your agent's character until it's perfect.</p>
                     </div>
                     <div class="step">
                         <div class="step-number">4</div>
@@ -127,7 +160,7 @@
                             <i class="fas fa-plug"></i>
                         </div>
                         <h3>Integrate Easily</h3>
-                        <p>Works with chatbots, games, and AI-driven systems.</p>
+                        <p>Works seamlessly with chatbots, games, and AI-driven systems through our Python SDK or REST API. Just a few lines of code to transform your AI with a unique character.</p>
                     </div>
                 </div>
             </div>
@@ -137,54 +170,68 @@
         <section id="why-use" class="why-use-section">
             <div class="section-container">
                 <h2 class="section-title">Why Use CharaVector?</h2>
+                <p class="section-description">
+                    In a world where AI interactions often feel generic and robotic, CharaVector gives your applications a competitive edge 
+                    with AI agents that users connect with on a deeper level. Our technology creates memorable experiences that keep users engaged.
+                </p>
+                
                 <div class="benefits-container">
                     <div class="benefit">
                         <div class="benefit-icon">
                             <i class="fas fa-fingerprint"></i>
                         </div>
                         <h3>Unique Character</h3>
-                        <p>Gives AI a unique character instead of generic responses.</p>
+                        <p>Gives AI a unique character instead of generic responses, creating a distinctive brand voice and character that users recognize and connect with.</p>
                     </div>
                     <div class="benefit">
                         <div class="benefit-icon">
                             <i class="fas fa-sync-alt"></i>
                         </div>
                         <h3>Dynamic & Adaptive</h3>
-                        <p>AI changes reactions based on interactions.</p>
+                        <p>AI changes reactions based on interactions, learning from conversations to provide increasingly personalized experiences that feel natural and responsive.</p>
                     </div>
                     <div class="benefit">
                         <div class="benefit-icon">
                             <i class="fas fa-code"></i>
                         </div>
                         <h3>Plug & Play API/SDK</h3>
-                        <p>Easy integration for developers.</p>
+                        <p>Easy integration for developers with comprehensive documentation, code examples, and support resources to get you up and running quickly.</p>
                     </div>
                     <div class="benefit">
                         <div class="benefit-icon">
                             <i class="fas fa-users"></i>
                         </div>
                         <h3>Multi-agent Ready</h3>
-                        <p>Helps AI agents collaborate better.</p>
+                        <p>Helps AI agents collaborate better with vector-based relationship modeling that enables realistic team dynamics and complex multi-agent scenarios.</p>
                     </div>
                 </div>
-                <div class="comparison-chart">
-                    <div class="comparison-column before">
-                        <h3>Before CharaVector</h3>
-                        <ul>
-                            <li>Generic responses</li>
-                            <li>Static behavior patterns</li>
-                            <li>Limited personality</li>
-                            <li>Predictable interactions</li>
-                        </ul>
-                    </div>
-                    <div class="comparison-column after">
-                        <h3>After CharaVector</h3>
-                        <ul>
-                            <li>Personalized responses</li>
-                            <li>Dynamic behavior adaptation</li>
-                            <li>Rich character expression</li>
-                            <li>Engaging, varied interactions</li>
-                        </ul>
+                
+                <div class="comparison-section">
+                    <h3 class="comparison-title">See the Difference</h3>
+                    <p class="comparison-description">
+                        Compare standard AI responses with CharaVector-enhanced interactions to see how our technology transforms the user experience.
+                    </p>
+                    <div class="comparison-chart">
+                        <div class="comparison-column before">
+                            <h3>Before CharaVector</h3>
+                            <ul>
+                                <li><strong>Generic responses</strong> that sound the same across different AI systems</li>
+                                <li><strong>Static behavior patterns</strong> that don't adapt to user preferences</li>
+                                <li><strong>Limited character</strong> with inconsistent tone and style</li>
+                                <li><strong>Predictable interactions</strong> that feel mechanical and scripted</li>
+                                <li><strong>One-size-fits-all</strong> approach to all users regardless of context</li>
+                            </ul>
+                        </div>
+                        <div class="comparison-column after">
+                            <h3>After CharaVector</h3>
+                            <ul>
+                                <li><strong>Personalized responses</strong> with distinctive character and voice</li>
+                                <li><strong>Dynamic behavior adaptation</strong> that evolves with each interaction</li>
+                                <li><strong>Rich character expression</strong> with consistent character traits</li>
+                                <li><strong>Engaging, varied interactions</strong> that feel natural and spontaneous</li>
+                                <li><strong>Contextually aware</strong> responses tailored to specific users and situations</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -194,38 +241,75 @@
         <section id="who-benefits" class="who-benefits-section">
             <div class="section-container">
                 <h2 class="section-title">Who Can Benefit?</h2>
+                <p class="section-description">
+                    CharaVector's technology is versatile and powerful, benefiting a wide range of industries and applications 
+                    where AI-human interaction is key to success. Our clients range from indie game developers to enterprise AI teams.
+                </p>
+                
                 <div class="use-cases">
                     <div class="use-case-card">
                         <div class="use-case-icon">
                             <i class="fas fa-laptop-code"></i>
                         </div>
                         <h3>AI Developers</h3>
-                        <p>Create smarter, more expressive AI.</p>
-                        <a href="#" class="learn-more">Learn More</a>
+                        <p>Create smarter, more expressive AI with character-driven responses that make your applications stand out in a crowded market. Reduce development time for character creation by 80%.</p>
+                        <div class="use-case-details">
+                            <p><strong>Key Benefits:</strong></p>
+                            <ul>
+                                <li>Rapid character prototyping</li>
+                                <li>Consistent character across features</li>
+                                <li>Simplified vector mathematics</li>
+                            </ul>
+                        </div>
+                        <a href="#api-details" class="learn-more">Learn More</a>
                     </div>
                     <div class="use-case-card">
                         <div class="use-case-icon">
                             <i class="fas fa-comment-dots"></i>
                         </div>
                         <h3>Chatbot Teams</h3>
-                        <p>Improve virtual assistant interactions.</p>
-                        <a href="#" class="learn-more">Learn More</a>
+                        <p>Improve virtual assistant interactions with character-driven responses that increase user satisfaction and engagement. Our clients report 40% higher user retention with CharaVector-enhanced chatbots.</p>
+                        <div class="use-case-details">
+                            <p><strong>Key Benefits:</strong></p>
+                            <ul>
+                                <li>Higher user satisfaction scores</li>
+                                <li>Reduced repetitive responses</li>
+                                <li>Brand-aligned character</li>
+                            </ul>
+                        </div>
+                        <a href="#api-details" class="learn-more">Learn More</a>
                     </div>
                     <div class="use-case-card">
                         <div class="use-case-icon">
                             <i class="fas fa-gamepad"></i>
                         </div>
                         <h3>Game Developers</h3>
-                        <p>Make NPCs more lifelike.</p>
-                        <a href="#" class="learn-more">Learn More</a>
+                        <p>Make NPCs more lifelike with dynamic characters that respond naturally to player actions. Create memorable characters that players connect with emotionally, enhancing game immersion.</p>
+                        <div class="use-case-details">
+                            <p><strong>Key Benefits:</strong></p>
+                            <ul>
+                                <li>Dynamic NPC interactions</li>
+                                <li>Relationship modeling between characters</li>
+                                <li>Emotional response simulation</li>
+                            </ul>
+                        </div>
+                        <a href="#api-details" class="learn-more">Learn More</a>
                     </div>
                     <div class="use-case-card">
                         <div class="use-case-icon">
                             <i class="fas fa-building"></i>
                         </div>
                         <h3>Enterprise AI</h3>
-                        <p>Enhance AI-driven business tools.</p>
-                        <a href="#" class="learn-more">Learn More</a>
+                        <p>Enhance AI-driven business tools with consistent brand voice and character across all customer touchpoints. Create cohesive experiences that strengthen brand identity and customer loyalty.</p>
+                        <div class="use-case-details">
+                            <p><strong>Key Benefits:</strong></p>
+                            <ul>
+                                <li>Consistent brand experience</li>
+                                <li>Personalized customer interactions</li>
+                                <li>Advanced analytics on engagement</li>
+                            </ul>
+                        </div>
+                        <a href="#api-details" class="learn-more">Learn More</a>
                     </div>
                 </div>
             </div>
@@ -235,10 +319,26 @@
         <section id="api-details" class="api-details-section">
             <div class="section-container">
                 <h2 class="section-title">API & SDK Details</h2>
+                <p class="section-description">
+                    Our developer-friendly tools make it easy to integrate CharaVector into your existing applications. 
+                    Whether you prefer our Python SDK for deep integration or our REST API for cross-platform flexibility, 
+                    we've designed our tools with simplicity and power in mind.
+                </p>
+                
                 <div class="api-features">
                     <div class="api-feature">
                         <h3>Python SDK & REST API</h3>
-                        <p>Easy implementation for any platform.</p>
+                        <p>Easy implementation for any platform with comprehensive documentation, tutorials, and example projects to get you started quickly.</p>
+                        <div class="api-details">
+                            <p><strong>Key Features:</strong></p>
+                            <ul>
+                                <li>Vector-based character creation</li>
+                                <li>Dynamic response generation</li>
+                                <li>Character adaptation algorithms</li>
+                                <li>Multi-agent relationship modeling</li>
+                                <li>Emotion detection and response</li>
+                            </ul>
+                        </div>
                         <div class="code-snippet">
                             <pre><code>
 # Install CharaVector SDK
@@ -262,52 +362,78 @@ response = agent.generate_response(user_input)
                     </div>
                     <div class="api-feature">
                         <h3>Interactive Dashboard</h3>
-                        <p>Test AI character adjustments in real-time.</p>
+                        <p>Test AI character adjustments in real-time with our intuitive dashboard. Visualize character vectors and see how changes affect responses instantly.</p>
+                        <div class="api-details">
+                            <p><strong>Dashboard Features:</strong></p>
+                            <ul>
+                                <li>Visual vector adjustment sliders</li>
+                                <li>Real-time response preview</li>
+                                <li>Character templates library</li>
+                                <li>Conversation simulation tools</li>
+                                <li>Performance analytics</li>
+                            </ul>
+                        </div>
                         <div class="dashboard-preview">
-                            <!-- Dashboard preview image will be added -->
+                            <img src="images/dashboard-preview.svg" alt="CharaVector Dashboard" class="dashboard-image">
                         </div>
                     </div>
                 </div>
-                <div class="pricing-tiers">
-                    <h3>Flexible Pricing</h3>
-                    <div class="pricing-cards">
-                        <div class="pricing-card">
-                            <div class="pricing-header">
-                                <h4>Free Tier</h4>
-                                <p class="price">$0</p>
+                
+                <div class="pricing-section">
+                    <h3 class="pricing-title">Flexible Pricing</h3>
+                    <p class="pricing-description">
+                        Choose the plan that fits your needs, from individual developers to enterprise teams. 
+                        All plans include access to our core technology with different usage limits and support levels.
+                    </p>
+                    <div class="pricing-tiers">
+                        <div class="pricing-cards">
+                            <div class="pricing-card">
+                                <div class="pricing-header">
+                                    <h4>Free Tier</h4>
+                                    <p class="price">$0</p>
+                                    <p class="price-description">Perfect for experimentation and small projects</p>
+                                </div>
+                                <ul class="pricing-features">
+                                    <li>Limited character adjustments (10 dimensions)</li>
+                                    <li>Basic API access (1,000 requests/month)</li>
+                                    <li>Community support</li>
+                                    <li>Public documentation</li>
+                                    <li>Standard response time</li>
+                                </ul>
+                                <a href="#get-started" class="btn secondary-btn">Get Started</a>
                             </div>
-                            <ul class="pricing-features">
-                                <li>Limited character adjustments</li>
-                                <li>Basic API access</li>
-                                <li>Community support</li>
-                            </ul>
-                            <a href="#" class="btn secondary-btn">Get Started</a>
-                        </div>
-                        <div class="pricing-card featured">
-                            <div class="pricing-header">
-                                <h4>Pro Tier</h4>
-                                <p class="price">Pay per API request</p>
+                            <div class="pricing-card featured">
+                                <div class="pricing-header">
+                                    <h4>Pro Tier</h4>
+                                    <p class="price">Pay per API request</p>
+                                    <p class="price-description">Starting at $0.001 per request</p>
+                                </div>
+                                <ul class="pricing-features">
+                                    <li>Unlimited character adjustments</li>
+                                    <li>Full API access</li>
+                                    <li>Priority support</li>
+                                    <li>Advanced analytics</li>
+                                    <li>Custom character templates</li>
+                                    <li>Multi-agent modeling</li>
+                                </ul>
+                                <a href="#get-started" class="btn primary-btn">Upgrade to Pro</a>
                             </div>
-                            <ul class="pricing-features">
-                                <li>Unlimited character adjustments</li>
-                                <li>Full API access</li>
-                                <li>Priority support</li>
-                                <li>Advanced analytics</li>
-                            </ul>
-                            <a href="#" class="btn primary-btn">Upgrade to Pro</a>
-                        </div>
-                        <div class="pricing-card">
-                            <div class="pricing-header">
-                                <h4>Enterprise</h4>
-                                <p class="price">Custom solutions</p>
+                            <div class="pricing-card">
+                                <div class="pricing-header">
+                                    <h4>Enterprise</h4>
+                                    <p class="price">Custom solutions</p>
+                                    <p class="price-description">Tailored to your organization's needs</p>
+                                </div>
+                                <ul class="pricing-features">
+                                    <li>Custom implementation</li>
+                                    <li>Dedicated support team</li>
+                                    <li>SLA guarantees</li>
+                                    <li>On-premise options</li>
+                                    <li>Advanced security features</li>
+                                    <li>Training and onboarding</li>
+                                </ul>
+                                <a href="#get-started" class="btn secondary-btn">Contact Sales</a>
                             </div>
-                            <ul class="pricing-features">
-                                <li>Custom implementation</li>
-                                <li>Dedicated support</li>
-                                <li>SLA guarantees</li>
-                                <li>On-premise options</li>
-                            </ul>
-                            <a href="#" class="btn secondary-btn">Contact Sales</a>
                         </div>
                     </div>
                 </div>
@@ -319,13 +445,17 @@ response = agent.generate_response(user_input)
             <div class="section-container">
                 <div class="cta-content">
                     <h2>Start shaping your AI characters today!</h2>
+                    <p class="cta-description">
+                        Join thousands of developers who are creating more engaging, personalized AI experiences with CharaVector. 
+                        Get started in minutes with our easy-to-use API and comprehensive documentation.
+                    </p>
                     <div class="cta-buttons">
                         <a href="#" class="btn primary-btn">Request API Key</a>
                         <a href="#" class="btn secondary-btn">Try the Demo</a>
                     </div>
                 </div>
                 <div class="cta-illustration">
-                    <!-- AI agent illustration will be added -->
+                    <img src="images/ai-agent-cta.svg" alt="AI Agent" class="cta-image">
                 </div>
             </div>
         </section>

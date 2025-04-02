@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CharaVector API & Pricing Section Preview</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #0f1624;
+            color: #ffffff;
+        }
+        .preview-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .preview-title {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #4cc9f0;
+        }
+        .section-preview {
+            border: 2px solid #4361ee;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 40px;
+            box-shadow: 0 0 15px rgba(67, 97, 238, 0.5);
+            background-color: #1a2332;
+        }
+        .section-content {
+            padding: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 8px;
+        }
+        .section-title {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2rem;
+            position: relative;
+            display: inline-block;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 60px;
+            height: 4px;
+            background: linear-gradient(90deg, #4361ee, #4cc9f0);
+            border-radius: 50px;
+        }
+        .section-description {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 40px;
+            font-size: 1.1rem;
+            color: #b8c1ec;
+            line-height: 1.6;
+        }
+        .api-features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        .api-feature {
+            flex: 1;
+            min-width: 300px;
+            max-width: 550px;
+        }
+        .api-feature h3 {
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+            color: #4cc9f0;
+        }
+        .api-details {
+            background-color: rgba(15, 22, 36, 0.5);
+            border-radius: 8px;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        .api-details p {
+            margin-bottom: 10px;
+            color: #ffffff;
+        }
+        .api-details ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        .api-details ul li {
+            color: #b8c1ec;
+            font-size: 0.9rem;
+            margin-bottom: 5px;
+        }
+        .code-snippet {
+            background-color: #0f1624;
+            border-radius: 8px;
+            padding: 15px;
+            margin-top: 15px;
+            overflow: auto;
+            border: 1px solid rgba(184, 193, 236, 0.1);
+        }
+        .code-snippet pre {
+            font-family: 'Courier New', monospace;
+            color: #b8c1ec;
+            font-size: 0.9rem;
+        }
+        .dashboard-preview {
+            margin-top: 15px;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid rgba(184, 193, 236, 0.1);
+        }
+        .pricing-section {
+            margin-top: 50px;
+        }
+        .pricing-title {
+            text-align: center;
+            margin-bottom: 15px;
+            font-size: 1.8rem;
+            color: #4cc9f0;
+        }
+        .pricing-description {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 40px;
+            color: #b8c1ec;
+        }
+        .pricing-cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .pricing-card {
+            flex: 1;
+            min-width: 250px;
+            max-width: 300px;
+            background-color: #0f1624;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            border: 1px solid rgba(184, 193, 236, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+        .pricing-card.featured {
+            transform: scale(1.05);
+            border: 1px solid rgba(76, 201, 240, 0.3);
+            box-shadow: 0 0 15px rgba(76, 201, 240, 0.5);
+            z-index: 1;
+        }
+        .pricing-header {
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid rgba(184, 193, 236, 0.1);
+        }
+        .pricing-header h4 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            color: #ffffff;
+        }
+        .pricing-header .price {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #4cc9f0;
+            margin-bottom: 5px;
+        }
+        .pricing-header .price-description {
+            font-size: 0.9rem;
+            color: #8892b0;
+        }
+        .pricing-features {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        .pricing-features li {
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 20px;
+            color: #b8c1ec;
+            list-style-type: none;
+        }
+        .pricing-features li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #00f5d4;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-weight: 600;
+            text-align: center;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.9rem;
+            text-decoration: none;
+        }
+        .primary-btn {
+            background: linear-gradient(90deg, #4361ee, #7209b7);
+            color: white;
+            border: none;
+        }
+        .secondary-btn {
+            background-color: transparent;
+            color: #4cc9f0;
+            border: 2px solid #4cc9f0;
+        }
+    </style>
+</head>
+<body>
+    <div class="preview-container">
+        <h1 class="preview-title">CharaVector API & Pricing Section Preview</h1>
+        
+        <div class="section-preview">
+            <div class="section-content">
+                <h2 class="section-title">API & SDK Details</h2>
+                <p class="section-description">
+                    Our developer-friendly tools make it easy to integrate CharaVector into your existing applications. 
+                    Whether you prefer our Python SDK for deep integration or our REST API for cross-platform flexibility, 
+                    we've designed our tools with simplicity and power in mind.
+                </p>
+                
+                <div class="api-features">
+                    <div class="api-feature">
+                        <h3>Python SDK & REST API</h3>
+                        <p>Easy implementation for any platform with comprehensive documentation, tutorials, and example projects to get you started quickly.</p>
+                        <div class="api-details">
+                            <p><strong>Key Features:</strong></p>
+                            <ul>
+                                <li>Vector-based character creation</li>
+                                <li>Dynamic response generation</li>
+                                <li>Personality adaptation algorithms</li>
+                                <li>Multi-agent relationship modeling</li>
+                                <li>Emotion detection and response</li>
+                            </ul>
+                        </div>
+                        <div class="code-snippet">
+                            <pre><code>
+# Install CharaVector SDK
+pip install charavector
+
+# Initialize with your API key
+from charavector import CharaVector
+cv = CharaVector(api_key="YOUR_API_KEY")
+
+# Define character traits
+agent = cv.create_agent(
+    patience=0.8,
+    curiosity=0.9,
+    assertiveness=0.4
+)
+
+# Get personalized response
+response = agent.generate_response(user_input)
+                            </code></pre>
+                        </div>
+                    </div>
+                    <div class="api-feature">
+                        <h3>Interactive Dashboard</h3>
+                        <p>Test AI character adjustments in real-time with our intuitive dashboard. Visualize personality vectors and see how changes affect responses instantly.</p>
+                        <div class="api-details">
+                            <p><strong>Dashboard Features:</strong></p>
+                            <ul>
+                                <li>Visual vector adjustment sliders</li>
+                                <li>Real-time response preview</li>
+                                <li>Character templates library</li>
+                                <li>Conversation simulation tools</li>
+                                <li>Performance analytics</li>
+                            </ul>
+                        </div>
+                        <div class="dashboard-preview">
+                            <img src="../images/dashboard-preview.svg" alt="CharaVector Dashboard">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="pricing-section">
+                    <h3 class="pricing-title">Flexible Pricing</h3>
+                    <p class="pricing-description">
+                        Choose the plan that fits your needs, from individual developers to enterprise teams. 
+                        All plans include access to our core technology with different usage limits and support levels.
+                    </p>
+                    <div class="pricing-cards">
+                        <div class="pricing-card">
+                            <div class="pricing-header">
+                                <h4>Free Tier</h4>
+                                <p class="price">$0</p>
+                                <p class="price-description">Perfect for experimentation and small projects</p>
+                            </div>
+                            <ul class="pricing-features">
+                                <li>Limited character adjustments (10 dimensions)</li>
+                                <li>Basic API access (1,000 requests/month)</li>
+                                <li>Community support</li>
+                                <li>Public documentation</li>
+                                <li>Standard response time</li>
+                            </ul>
+                            <a href="#" class="btn secondary-btn">Get Started</a>
+                        </div>
+                        <div class="pricing-card featured">
+                            <div class="pricing-header">
+                                <h4>Pro Tier</h4>
+                                <p class="price">Pay per API request</p>
+                                <p class="price-description">Starting at $0.001 per request</p>
+                            </div>
+                            <ul class="pricing-features">
+                                <li>Unlimited character adjustments</li>
+                                <li>Full API access</li>
+                                <li>Priority support</li>
+                                <li>Advanced analytics</li>
+                                <li>Custom character templates</li>
+                                <li>Multi-agent modeling</li>
+                            </ul>
+                            <a href="#" class="btn primary-btn">Upgrade to Pro</a>
+                        </div>
+                        <div class="pricing-card">
+                            <div class="pricing-header">
+                                <h4>Enterprise</h4>
+                                <p class="price">Custom solutions</p>
+                                <p class="price-description">Tailored to your organization's needs</p>
+                            </div>
+                            <ul class="pricing-features">
+                                <li>Custom implementation</li>
+                                <li>Dedicated support team</li>
+                                <li>SLA guarantees</li>
+                                <li>On-premise options</li>
+                                <li>Advanced security features</li>
+                                <li>Training and onboarding</li>
+                            </ul>
+                            <a href="#" class="btn secondary-btn">Contact Sales</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
