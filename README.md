@@ -74,4 +74,4 @@ Then visit http://localhost:8000 in your browser.
 
 ## License
 
-All rights reserved.
+MIT License — see [LICENSE](LICENSE) for details.
